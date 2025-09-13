@@ -20,9 +20,7 @@ int main() {
       int answer;
       int bulls=0;
       int cows=0;
-      cout << number << endl;
-      cout << find('1', "1000");
-      int i=0;
+      long unsigned int i=0;
       while (answer != number)
       {
             cin >> answer; 
