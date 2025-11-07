@@ -1,0 +1,8 @@
+# ninja log v5
+4	73	1758980824060271338	snake_autogen/timestamp	3715a9d41217c978
+4	73	1758980824060271338	snake_autogen/mocs_compilation.cpp	3715a9d41217c978
+4	73	1758980824060271338	/home/au/C/mipt/mipt/build/snake_autogen/timestamp	3715a9d41217c978
+4	73	1758980824060271338	/home/au/C/mipt/mipt/build/snake_autogen/mocs_compilation.cpp	3715a9d41217c978
+91	117	1758980572870489209	CMakeFiles/snake.dir/snake_autogen/mocs_compilation.cpp.o	2c6456388f413b3d
+74	2481	1758980826462648268	CMakeFiles/snake.dir/snakeQT.cpp.o	30028a16f5288865
+2483	2906	1758980826890370737	snake	3d44a7566ab7779

@@ -1,0 +1,7 @@
+{
+  "cmake.sourceDirectory": "/home/au/C/mipt/mipt/snake",
+  "cmake.generator": "Ninja",
+  "cmake.configureSettings": {
+    "CMAKE_PREFIX_PATH": "/usr/lib/x86_64-linux-gnu/cmake/Qt6"
+  }
+}

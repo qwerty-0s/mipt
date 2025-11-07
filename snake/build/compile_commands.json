@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/au/C/mipt/mipt/snake/build",
+  "command": "/usr/bin/g++ -g -std=gnu++17 -o CMakeFiles/SnakeFLTK.dir/main.cpp.o -c /home/au/C/mipt/mipt/snake/main.cpp",
+  "file": "/home/au/C/mipt/mipt/snake/main.cpp"
+},
+{
+  "directory": "/home/au/C/mipt/mipt/snake/build",
+  "command": "/usr/bin/g++ -g -std=gnu++17 -o CMakeFiles/SnakeFLTK.dir/snakeBack.cpp.o -c /home/au/C/mipt/mipt/snake/snakeBack.cpp",
+  "file": "/home/au/C/mipt/mipt/snake/snakeBack.cpp"
+},
+{
+  "directory": "/home/au/C/mipt/mipt/snake/build",
+  "command": "/usr/bin/g++ -g -std=gnu++17 -o CMakeFiles/SnakeFLTK.dir/snakeGraph.cpp.o -c /home/au/C/mipt/mipt/snake/snakeGraph.cpp",
+  "file": "/home/au/C/mipt/mipt/snake/snakeGraph.cpp"
+}
+]
