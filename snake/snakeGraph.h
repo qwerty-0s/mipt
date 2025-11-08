@@ -12,13 +12,14 @@
 class Game_Window : public Fl_Window {
 private:
     snake* player;
-    int cell_size = 20;
+    int cell_size = 10;
 
 public:
-    Game_Window(int w, int h, snake* s, int cell_size = 20);
+    Game_Window(int w, int h, snake* s, int cell_size = 10);
 
     int handle(int event) override;
     void draw() override;
+    int get_cell_size();
 
     snake* get_player();
 };

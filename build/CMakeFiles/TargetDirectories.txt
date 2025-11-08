@@ -1,5 +1,3 @@
-/home/au/C/mipt/mipt/build/CMakeFiles/snake.dir
+/home/au/C/mipt/mipt/build/CMakeFiles/SnakeFLTK.dir
 /home/au/C/mipt/mipt/build/CMakeFiles/edit_cache.dir
 /home/au/C/mipt/mipt/build/CMakeFiles/rebuild_cache.dir
-/home/au/C/mipt/mipt/build/CMakeFiles/snake_autogen_timestamp_deps.dir
-/home/au/C/mipt/mipt/build/CMakeFiles/snake_autogen.dir

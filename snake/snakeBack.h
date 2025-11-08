@@ -10,6 +10,7 @@ public:
 
     void move();
     void set_direction(direction d);
+    bool check_collision(int max_width, int max_height);
 
     int len();
     int get_snake_coordinates_x(int n);
@@ -19,7 +20,7 @@ private:
     int snake_body_x[100];
     int snake_body_y[100];
     int max_length;
-    direction dir;
+    direction dir = RIGHT;
 };
 
 #endif 
