@@ -1,5 +1,7 @@
 
 #include "snakeBack.h"
+#include <FL/Fl.H>
+#include <FL/fl_draw.H> 
 
 snake::snake(int x, int y)
 {
@@ -72,5 +74,25 @@ void snake::set_direction(direction d)
     }
     else{ 
         dir = d;
+    }
+}
+
+SnakeBackground::SnakeBackground(int w, int h, int cell) 
+    : width(w), height(h), cellSize(cell)
+{
+}
+
+void SnakeBackground::draw() {
+    
+    fl_color(0x100a3a);  
+    fl_rectf(0, 0, width, height);
+    
+    
+    fl_color(0x3a4a7a);  
+    for (int x = 0; x <= width; x += cellSize) {
+        fl_line(x, 0, x, height);
+    }
+    for (int y = 0; y <= height; y += cellSize) {
+        fl_line(0, y, width, y);
     }
 }
