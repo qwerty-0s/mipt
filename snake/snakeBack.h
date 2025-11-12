@@ -1,5 +1,3 @@
-
-
 #ifndef SNAKEBACK_H
 #define SNAKEBACK_H
 
@@ -23,5 +21,14 @@ private:
     direction dir = RIGHT;
 };
 
-#endif 
+class SnakeBackground {
+private:
+    int width;
+    int height;
+    int cellSize;
 
+public:
+    SnakeBackground(int w = 800, int h = 600, int cell = 20);
+    void draw();
+};
+#endif

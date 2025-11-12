@@ -1,22 +1,35 @@
-
 #include "snakeGraph.h"
 #include <FL/Fl.H>
+#include <FL/fl_draw.H>
 
 Game_Window::Game_Window(int w, int h, snake* s, int cell_size_)
-    : Fl_Window(w, h, "Snake"), player(s), cell_size(cell_size_) {}
-
+    : Fl_Window(w, h, "Snake Game"), player(s), cell_size(cell_size_)
+{
+    end();
+}
 
 int Game_Window::handle(int event) {
     if(event == FL_KEYDOWN) {
         switch(Fl::event_key()) {
-            case 'w': player->set_direction(snake::UP); break;
-            case 's': player->set_direction(snake::DOWN); break;
-            case 'a': player->set_direction(snake::LEFT); break;
-            case 'd': player->set_direction(snake::RIGHT); break;
-            case FL_Up: player->set_direction(snake::UP); break;
-            case FL_Down:player->set_direction(snake::DOWN); break;
-            case FL_Left:player->set_direction(snake::LEFT); break;
-            case FL_Right:player->set_direction(snake::RIGHT); break;
+            case 'w': 
+            case FL_Up: 
+                player->set_direction(snake::UP); 
+                break;
+            case 's': 
+            case FL_Down:
+                player->set_direction(snake::DOWN); 
+                break;
+            case 'a': 
+            case FL_Left:
+                player->set_direction(snake::LEFT); 
+                break;
+            case 'd': 
+            case FL_Right:
+                player->set_direction(snake::RIGHT); 
+                break;
+            case FL_Escape:
+                hide();
+                return 1;
             default:
                 return 0; 
         }
@@ -25,22 +38,62 @@ int Game_Window::handle(int event) {
     return Fl_Window::handle(event);
 }
 
-int Game_Window::get_cell_size()
-{
-    return cell_size;
-}
-
 void Game_Window::draw() {
     Fl_Window::draw();
-
-    fl_color(FL_GREEN);
+    
+    
+    fl_color(8, 5, 26);//фон
+    fl_rectf(0, 0, w(), h());
+    
+    // Рисуем сетку
+    fl_color(25, 25, 50); 
+    for (int x = 0; x <= w(); x += cell_size) {
+        fl_line(x, 0, x, h());
+    }
+    for (int y = 0; y <= h(); y += cell_size) {
+        fl_line(0, y, w(), y);
+    }
+    
+    // Затем рисуем змейку поверх фона
+    fl_color(FL_GRAY);
     for(int i = 0; i < player->len(); ++i) {
         int x = player->get_snake_coordinates_x(i) * cell_size;
         int y = player->get_snake_coordinates_y(i) * cell_size;
         fl_rectf(x, y, cell_size, cell_size);
     }
+    
+    // Рисуем голову 
+    if (player->len() > 0) {
+        fl_color(FL_WHITE);
+        int x = player->get_snake_coordinates_x(0) * cell_size;
+        int y = player->get_snake_coordinates_y(0) * cell_size;
+        fl_rectf(x, y, cell_size, cell_size);
+    }
+}
+
+int Game_Window::get_cell_size() {
+    return cell_size;
 }
 
 snake* Game_Window::get_player() {
     return player;
+}
+
+BackgroundWindow::BackgroundWindow(int w, int h, const char* title) 
+    : Fl_Window(w, h, title), background(w, h)
+{
+    end();
+}
+
+void BackgroundWindow::draw() {
+    Fl_Window::draw();
+    background.draw();
+}
+
+int BackgroundWindow::handle(int event) {
+    if (event == FL_KEYDOWN && Fl::event_key() == FL_Escape) {
+        hide();
+        return 1;
+    }
+    return Fl_Window::handle(event);  
 }
