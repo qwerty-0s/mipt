@@ -1,5 +1,5 @@
-# ninja log v5
-1	44	1762602675790807822	CMakeFiles/SnakeFLTK.dir/snakeBack.cpp.o	8a19e4ba5431a7e4
-1	123	1762602675870807820	CMakeFiles/SnakeFLTK.dir/main.cpp.o	88e0490d857ed43c
-2	132	1762602675878807820	CMakeFiles/SnakeFLTK.dir/snakeGraph.cpp.o	3a4535bacda3d7b8
-132	460	1762602676202807813	SnakeFLTK	99fd70526b85b068
+# ninja log v6
+4	226	1763083670570128216	CMakeFiles/SnakeFLTK.dir/snakeBack.cpp.o	cb83b9a6e1a9d3df
+3	146	1763083670566128012	CMakeFiles/SnakeFLTK.dir/main.cpp.o	5705d19bd5b7f80c
+4	252	1763083670570128216	CMakeFiles/SnakeFLTK.dir/snakeGraph.cpp.o	ba9864eeadff027a
+252	414	1763083670818140867	SnakeFLTK	86baac2c3e1f1953

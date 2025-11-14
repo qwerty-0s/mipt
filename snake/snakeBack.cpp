@@ -77,6 +77,19 @@ void snake::set_direction(direction d)
     }
 }
 
+bool snake::grow(food* meal)
+{
+    if(meal && snake_body_x[0] == meal->getX() && snake_body_y[0] == meal->getY())
+    {
+        max_length+=1;
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}
+
 SnakeBackground::SnakeBackground(int w, int h, int cell) 
     : width(w), height(h), cellSize(cell)
 {
@@ -96,3 +109,20 @@ void SnakeBackground::draw() {
         fl_line(0, y, width, y);
     }
 }
+
+void food::respawn(int max_width, int max_height)
+    {
+        x = rand() % max_width;
+        y = rand() % max_height;
+    }
+
+
+
+food::food(int max_width, int max_height)
+    {
+        srand(time(0));
+        respawn(max_width, max_height);
+    }
+
+    int food::getX() { return x; }
+    int food::getY() { return y; }

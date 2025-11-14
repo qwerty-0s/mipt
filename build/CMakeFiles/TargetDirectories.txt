@@ -1,3 +1,0 @@
-/home/au/C/mipt/mipt/build/CMakeFiles/SnakeFLTK.dir
-/home/au/C/mipt/mipt/build/CMakeFiles/edit_cache.dir
-/home/au/C/mipt/mipt/build/CMakeFiles/rebuild_cache.dir

@@ -6,12 +6,16 @@
 void game_tick(void* userdata) {
     Game_Window* window = static_cast<Game_Window*>(userdata);
     snake* p = window->get_player();
+    food* meal = window->get_meal();
     int cellsize = window->get_cell_size(); 
     int max_width  = window->w() / cellsize;
     int max_height = window->h() / cellsize;
     
     p->move();
-    
+    if (p->grow(meal)) 
+    {
+        meal->respawn(max_width, max_height);
+    }
     if (p->check_collision(max_width, max_height)){
         printf("GAME OVER\n");
         Fl::remove_timeout(game_tick, userdata);

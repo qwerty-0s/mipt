@@ -3,9 +3,13 @@
 #include <FL/fl_draw.H>
 
 Game_Window::Game_Window(int w, int h, snake* s, int cell_size_)
-    : Fl_Window(w, h, "Snake Game"), player(s), cell_size(cell_size_)
+    : Fl_Window(w, h, "Snake Game"), player(s), cell_size(cell_size_), meal(new food(w / cell_size_, h / cell_size_))
 {
     end();
+}
+
+Game_Window::~Game_Window() {
+    delete meal;
 }
 
 int Game_Window::handle(int event) {
@@ -54,6 +58,14 @@ void Game_Window::draw() {
         fl_line(0, y, w(), y);
     }
     
+    // Рисуем еду перед змейкой, чтобы она была видна
+    if (meal) {
+        fl_color(FL_RED);
+        int meal_x = meal->getX() * cell_size;
+        int meal_y = meal->getY() * cell_size;
+        fl_rectf(meal_x, meal_y, cell_size, cell_size);
+    }
+    
     // Затем рисуем змейку поверх фона
     fl_color(FL_GRAY);
     for(int i = 0; i < player->len(); ++i) {
@@ -77,6 +89,10 @@ int Game_Window::get_cell_size() {
 
 snake* Game_Window::get_player() {
     return player;
+}
+
+food* Game_Window::get_meal() {
+    return meal;
 }
 
 BackgroundWindow::BackgroundWindow(int w, int h, const char* title) 
