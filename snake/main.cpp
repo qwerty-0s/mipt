@@ -3,21 +3,20 @@
 #include "snakeBack.h"
 #include "snakeGraph.h"
 
+int global_time = 0;
+
 void game_tick(void* userdata) {
     Game_Window* window = static_cast<Game_Window*>(userdata);
-    // if window is hidden/closed, stop ticking
-    if (!window || !window->visible()) {
-        Fl::remove_timeout(game_tick, userdata);
-        return;
-    }
     snake* p1 = window->get_player1();
     snake* p2 = window->get_player2();
     food* meal = window->get_meal();
     int cellsize = window->get_cell_size(); 
     int max_width  = window->w() / cellsize;
     int max_height = window->h() / cellsize;
-    
-    
+    int Time;
+    global_time += 1;
+    Time = global_time / 10; 
+      
     if (p1) p1->move();
     if (p2) p2->move();
 
@@ -64,8 +63,24 @@ void game_tick(void* userdata) {
         Fl::remove_timeout(game_tick, userdata);
         return;
     }
+
+    if(Time >= 30){
+        printf("GAME OVER \n");
+        if (p1->len() > p2->len()){
+            printf("player WHITE win\n");
+        }
+        else if (p2->len() > p1->len()){
+            printf("player GREEN win\n");
+        }
+        else{
+            printf("no one win\n");
+        }
+        Fl::remove_timeout(game_tick, userdata);
+        return;
+    }
     
     window->redraw();
+    printf("Time: %d seconds\n", global_time / 10);
     Fl::repeat_timeout(0.1, game_tick, userdata);
 }
 
