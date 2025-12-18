@@ -1,0 +1,3 @@
+/home/oleg/Документы/mipt/snake/Test/CMakeFiles/SnakeFLTK.dir
+/home/oleg/Документы/mipt/snake/Test/CMakeFiles/edit_cache.dir
+/home/oleg/Документы/mipt/snake/Test/CMakeFiles/rebuild_cache.dir

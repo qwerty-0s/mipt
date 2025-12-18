@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/snake_game.dir/link.d CMakeFiles/snake_game.dir/snakeBack.cpp.o -o snake_game

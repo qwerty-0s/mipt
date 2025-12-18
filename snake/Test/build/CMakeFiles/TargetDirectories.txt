@@ -1,0 +1,5 @@
+/home/oleg/Документы/mipt/snake/Test/build/CMakeFiles/snake_game.dir
+/home/oleg/Документы/mipt/snake/Test/build/CMakeFiles/snake_tests.dir
+/home/oleg/Документы/mipt/snake/Test/build/CMakeFiles/test.dir
+/home/oleg/Документы/mipt/snake/Test/build/CMakeFiles/edit_cache.dir
+/home/oleg/Документы/mipt/snake/Test/build/CMakeFiles/rebuild_cache.dir
