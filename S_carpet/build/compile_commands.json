@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/au/C/mipt/S_carpet/build",
+  "command": "/usr/bin/g++ -g -Wall -Wextra -g -std=c++17 -o CMakeFiles/S_carpet.dir/main.cpp.o -c /home/au/C/mipt/S_carpet/main.cpp",
+  "file": "/home/au/C/mipt/S_carpet/main.cpp"
+}
+]

@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/angle_test.dir/link.d CMakeFiles/angle_test.dir/radians.cpp.o CMakeFiles/angle_test.dir/main.cpp.o -o angle_test

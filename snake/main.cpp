@@ -64,7 +64,7 @@ void game_tick(void* userdata) {
         return;
     }
 
-    if(Time >= 30){
+    if(Time >= 60){
         printf("GAME OVER \n");
         if (p1->len() > p2->len()){
             printf("player WHITE win\n");

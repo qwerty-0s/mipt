@@ -1,0 +1,3 @@
+/home/au/C/mipt/radians/build/CMakeFiles/angle_test.dir
+/home/au/C/mipt/radians/build/CMakeFiles/edit_cache.dir
+/home/au/C/mipt/radians/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,2 @@
+/home/au/C/mipt/S_carpet/build/CMakeFiles/edit_cache.dir
+/home/au/C/mipt/S_carpet/build/CMakeFiles/rebuild_cache.dir
