@@ -335,7 +335,6 @@ TEST(SnakeEdgeCases, NegativeCoordinates) {
     EXPECT_EQ(testSnake.get_snake_coordinates_x(0), -4);
 }
 
-// ==================== PARAMETERIZED TESTS ====================
 
 struct DirectionTestParams {
     snake::direction startDir;
