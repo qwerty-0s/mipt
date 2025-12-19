@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wl,--no-warn-rwx-segments -Wl,--dependency-file=CMakeFiles/snake_tests.dir/link.d CMakeFiles/snake_tests.dir/test_snakeBack.cpp.o CMakeFiles/snake_tests.dir/snakeBack.cpp.o -o snake_tests  -lfltk lib/libgtest.a lib/libgtest_main.a lib/libgmock.a -lpthread lib/libgtest.a

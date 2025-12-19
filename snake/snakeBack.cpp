@@ -1,4 +1,4 @@
-
+#include <ctime>
 #include "snakeBack.h"
 #include <FL/Fl.H>
 #include <FL/fl_draw.H> 
