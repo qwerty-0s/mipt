@@ -1,4 +1,4 @@
-CMakeFiles/snake_tests.dir/home/au/C/mipt/mipt/snake/snakeBack.cpp.o: \
+CMakeFiles/SnakeFLTK.dir/snakeBack.cpp.o: \
  /home/au/C/mipt/mipt/snake/snakeBack.cpp /usr/include/stdc-predef.h \
  /home/au/C/mipt/mipt/snake/snakeBack.h /usr/local/include/FL/Fl.H \
  /usr/local/include/FL/fl_config.h /usr/local/include/FL/Fl_Export.H \

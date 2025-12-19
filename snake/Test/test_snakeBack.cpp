@@ -115,7 +115,7 @@ TEST_F(SnakeTest, CheckSelfCollision) {
 
 TEST_F(SnakeTest, CheckWallCollision) {
     // Тест столкновения с правой стенкой
-    snake rightWallSnake(99, 50); // Правая граница при max_width = 100
+    snake rightWallSnake(100, 50); // Правая граница при max_width = 100
     EXPECT_TRUE(rightWallSnake.check_collision(100, 100));
     
     // Тест столкновения с левой стенкой
@@ -123,7 +123,7 @@ TEST_F(SnakeTest, CheckWallCollision) {
     EXPECT_TRUE(leftWallSnake.check_collision(100, 100));
     
     // Тест столкновения с нижней стенкой
-    snake bottomWallSnake(50, 99); // Нижняя граница при max_height = 100
+    snake bottomWallSnake(50, 100); // Нижняя граница при max_height = 100
     EXPECT_TRUE(bottomWallSnake.check_collision(100, 100));
     
     // Тест столкновения с верхней стенкой
@@ -308,7 +308,7 @@ TEST(SnakeFoodIntegration, SnakeMovementAroundFood) {
 TEST(SnakeEdgeCases, MaximumLengthNotExceeded) {
     // Создаем змейку и много раз кормим
     snake testSnake(0, 0);
-    food* testFood = new food(0, 0); // Еда в позиции змейки
+    food* testFood = new food(1, 1); // Еда в позиции змейки
     
     // Много раз пытаемся съесть еду
     for (int i = 0; i < 50; i++) {

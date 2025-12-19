@@ -36,7 +36,7 @@ FetchContent_Declare(
     googletest
     URL https://github.com/google/googletest/archive/refs/tags/v1.13.0.tar.gz
 )
-FetchContent_MakeAvailable(googletest)
+FetchContent_MakegetColorAvailable(googletest)
 
 target_link_libraries(snake_tests
     PRIVATE

@@ -34,7 +34,6 @@ snake::snake(int x, int y) {
 }
 
 void snake::move() {
-    // allow direction to be changed again on next tick
     direction_locked = false;
     int i = max_length;
     for (i = max_length - 1; i > 0; i--) {

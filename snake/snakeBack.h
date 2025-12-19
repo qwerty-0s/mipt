@@ -24,7 +24,6 @@ private:
   int snake_body_y[100];
   int max_length;
   direction dir = RIGHT;
-  // Prevent multiple direction changes between moves (one change per tick)
   bool direction_locked = false;
 };
 
