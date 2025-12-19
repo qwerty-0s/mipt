@@ -599,3 +599,182 @@ events:
         
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckLibraryExists.cmake:78 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindX11.cmake:693 (check_library_exists)"
+      - "/usr/share/cmake-3.31/Modules/FindFLTK.cmake:102 (include)"
+      - "CMakeLists.txt:9 (find_package)"
+    checks:
+      - "Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so"
+    directories:
+      source: "/home/oleg/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/mipt/snake/Test/build/CMakeFiles/CMakeScratch/TryCompile-u1y7ON"
+      binary: "/home/oleg/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/mipt/snake/Test/build/CMakeFiles/CMakeScratch/TryCompile-u1y7ON"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -Wl,--no-warn-rwx-segments"
+    buildResult:
+      variable: "X11_LIB_X11_SOLO"
+      cached: true
+      stdout: |
+        Change Dir: '/home/oleg/Документы/mipt/snake/Test/build/CMakeFiles/CMakeScratch/TryCompile-u1y7ON'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_25b76/fast
+        gmake[1]: вход в каталог «/home/oleg/Документы/mipt/snake/Test/build/CMakeFiles/CMakeScratch/TryCompile-u1y7ON»
+        /usr/bin/gmake  -f CMakeFiles/cmTC_25b76.dir/build.make CMakeFiles/cmTC_25b76.dir/build
+        gmake[2]: вход в каталог «/home/oleg/Документы/mipt/snake/Test/build/CMakeFiles/CMakeScratch/TryCompile-u1y7ON»
+        Building C object CMakeFiles/cmTC_25b76.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay -o CMakeFiles/cmTC_25b76.dir/CheckFunctionExists.c.o -c /home/oleg/Документы/mipt/snake/Test/build/CMakeFiles/CMakeScratch/TryCompile-u1y7ON/CheckFunctionExists.c
+        Linking C executable cmTC_25b76
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_25b76.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=XOpenDisplay  -Wl,--no-warn-rwx-segments  CMakeFiles/cmTC_25b76.dir/CheckFunctionExists.c.o -o cmTC_25b76  /usr/lib/x86_64-linux-gnu/libX11.so
+        gmake[2]: выход из каталога «/home/oleg/Документы/mipt/snake/Test/build/CMakeFiles/CMakeScratch/TryCompile-u1y7ON»
+        gmake[1]: выход из каталога «/home/oleg/Документы/mipt/snake/Test/build/CMakeFiles/CMakeScratch/TryCompile-u1y7ON»
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindX11.cmake:708 (check_function_exists)"
+      - "/usr/share/cmake-3.31/Modules/FindFLTK.cmake:102 (include)"
+      - "CMakeLists.txt:9 (find_package)"
+    checks:
+      - "Looking for gethostbyname"
+    directories:
+      source: "/home/oleg/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/mipt/snake/Test/build/CMakeFiles/CMakeScratch/TryCompile-WOsb07"
+      binary: "/home/oleg/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/mipt/snake/Test/build/CMakeFiles/CMakeScratch/TryCompile-WOsb07"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -Wl,--no-warn-rwx-segments"
+    buildResult:
+      variable: "CMAKE_HAVE_GETHOSTBYNAME"
+      cached: true
+      stdout: |
+        Change Dir: '/home/oleg/Документы/mipt/snake/Test/build/CMakeFiles/CMakeScratch/TryCompile-WOsb07'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_470fd/fast
+        gmake[1]: вход в каталог «/home/oleg/Документы/mipt/snake/Test/build/CMakeFiles/CMakeScratch/TryCompile-WOsb07»
+        /usr/bin/gmake  -f CMakeFiles/cmTC_470fd.dir/build.make CMakeFiles/cmTC_470fd.dir/build
+        gmake[2]: вход в каталог «/home/oleg/Документы/mipt/snake/Test/build/CMakeFiles/CMakeScratch/TryCompile-WOsb07»
+        Building C object CMakeFiles/cmTC_470fd.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname -o CMakeFiles/cmTC_470fd.dir/CheckFunctionExists.c.o -c /home/oleg/Документы/mipt/snake/Test/build/CMakeFiles/CMakeScratch/TryCompile-WOsb07/CheckFunctionExists.c
+        Linking C executable cmTC_470fd
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_470fd.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname  -Wl,--no-warn-rwx-segments  CMakeFiles/cmTC_470fd.dir/CheckFunctionExists.c.o -o cmTC_470fd
+        gmake[2]: выход из каталога «/home/oleg/Документы/mipt/snake/Test/build/CMakeFiles/CMakeScratch/TryCompile-WOsb07»
+        gmake[1]: выход из каталога «/home/oleg/Документы/mipt/snake/Test/build/CMakeFiles/CMakeScratch/TryCompile-WOsb07»
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindX11.cmake:722 (check_function_exists)"
+      - "/usr/share/cmake-3.31/Modules/FindFLTK.cmake:102 (include)"
+      - "CMakeLists.txt:9 (find_package)"
+    checks:
+      - "Looking for connect"
+    directories:
+      source: "/home/oleg/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/mipt/snake/Test/build/CMakeFiles/CMakeScratch/TryCompile-gOJlmt"
+      binary: "/home/oleg/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/mipt/snake/Test/build/CMakeFiles/CMakeScratch/TryCompile-gOJlmt"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -Wl,--no-warn-rwx-segments"
+    buildResult:
+      variable: "CMAKE_HAVE_CONNECT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/oleg/Документы/mipt/snake/Test/build/CMakeFiles/CMakeScratch/TryCompile-gOJlmt'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_57cb1/fast
+        gmake[1]: вход в каталог «/home/oleg/Документы/mipt/snake/Test/build/CMakeFiles/CMakeScratch/TryCompile-gOJlmt»
+        /usr/bin/gmake  -f CMakeFiles/cmTC_57cb1.dir/build.make CMakeFiles/cmTC_57cb1.dir/build
+        gmake[2]: вход в каталог «/home/oleg/Документы/mipt/snake/Test/build/CMakeFiles/CMakeScratch/TryCompile-gOJlmt»
+        Building C object CMakeFiles/cmTC_57cb1.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect -o CMakeFiles/cmTC_57cb1.dir/CheckFunctionExists.c.o -c /home/oleg/Документы/mipt/snake/Test/build/CMakeFiles/CMakeScratch/TryCompile-gOJlmt/CheckFunctionExists.c
+        Linking C executable cmTC_57cb1
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_57cb1.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=connect  -Wl,--no-warn-rwx-segments  CMakeFiles/cmTC_57cb1.dir/CheckFunctionExists.c.o -o cmTC_57cb1
+        gmake[2]: выход из каталога «/home/oleg/Документы/mipt/snake/Test/build/CMakeFiles/CMakeScratch/TryCompile-gOJlmt»
+        gmake[1]: выход из каталога «/home/oleg/Документы/mipt/snake/Test/build/CMakeFiles/CMakeScratch/TryCompile-gOJlmt»
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindX11.cmake:731 (check_function_exists)"
+      - "/usr/share/cmake-3.31/Modules/FindFLTK.cmake:102 (include)"
+      - "CMakeLists.txt:9 (find_package)"
+    checks:
+      - "Looking for remove"
+    directories:
+      source: "/home/oleg/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/mipt/snake/Test/build/CMakeFiles/CMakeScratch/TryCompile-RJmuqS"
+      binary: "/home/oleg/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/mipt/snake/Test/build/CMakeFiles/CMakeScratch/TryCompile-RJmuqS"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -Wl,--no-warn-rwx-segments"
+    buildResult:
+      variable: "CMAKE_HAVE_REMOVE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/oleg/Документы/mipt/snake/Test/build/CMakeFiles/CMakeScratch/TryCompile-RJmuqS'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2d5fd/fast
+        gmake[1]: вход в каталог «/home/oleg/Документы/mipt/snake/Test/build/CMakeFiles/CMakeScratch/TryCompile-RJmuqS»
+        /usr/bin/gmake  -f CMakeFiles/cmTC_2d5fd.dir/build.make CMakeFiles/cmTC_2d5fd.dir/build
+        gmake[2]: вход в каталог «/home/oleg/Документы/mipt/snake/Test/build/CMakeFiles/CMakeScratch/TryCompile-RJmuqS»
+        Building C object CMakeFiles/cmTC_2d5fd.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove -o CMakeFiles/cmTC_2d5fd.dir/CheckFunctionExists.c.o -c /home/oleg/Документы/mipt/snake/Test/build/CMakeFiles/CMakeScratch/TryCompile-RJmuqS/CheckFunctionExists.c
+        Linking C executable cmTC_2d5fd
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2d5fd.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=remove  -Wl,--no-warn-rwx-segments  CMakeFiles/cmTC_2d5fd.dir/CheckFunctionExists.c.o -o cmTC_2d5fd
+        gmake[2]: выход из каталога «/home/oleg/Документы/mipt/snake/Test/build/CMakeFiles/CMakeScratch/TryCompile-RJmuqS»
+        gmake[1]: выход из каталога «/home/oleg/Документы/mipt/snake/Test/build/CMakeFiles/CMakeScratch/TryCompile-RJmuqS»
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindX11.cmake:740 (check_function_exists)"
+      - "/usr/share/cmake-3.31/Modules/FindFLTK.cmake:102 (include)"
+      - "CMakeLists.txt:9 (find_package)"
+    checks:
+      - "Looking for shmat"
+    directories:
+      source: "/home/oleg/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/mipt/snake/Test/build/CMakeFiles/CMakeScratch/TryCompile-jATkNJ"
+      binary: "/home/oleg/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/mipt/snake/Test/build/CMakeFiles/CMakeScratch/TryCompile-jATkNJ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -Wl,--no-warn-rwx-segments"
+    buildResult:
+      variable: "CMAKE_HAVE_SHMAT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/oleg/Документы/mipt/snake/Test/build/CMakeFiles/CMakeScratch/TryCompile-jATkNJ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7edd3/fast
+        gmake[1]: вход в каталог «/home/oleg/Документы/mipt/snake/Test/build/CMakeFiles/CMakeScratch/TryCompile-jATkNJ»
+        /usr/bin/gmake  -f CMakeFiles/cmTC_7edd3.dir/build.make CMakeFiles/cmTC_7edd3.dir/build
+        gmake[2]: вход в каталог «/home/oleg/Документы/mipt/snake/Test/build/CMakeFiles/CMakeScratch/TryCompile-jATkNJ»
+        Building C object CMakeFiles/cmTC_7edd3.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat -o CMakeFiles/cmTC_7edd3.dir/CheckFunctionExists.c.o -c /home/oleg/Документы/mipt/snake/Test/build/CMakeFiles/CMakeScratch/TryCompile-jATkNJ/CheckFunctionExists.c
+        Linking C executable cmTC_7edd3
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7edd3.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=shmat  -Wl,--no-warn-rwx-segments  CMakeFiles/cmTC_7edd3.dir/CheckFunctionExists.c.o -o cmTC_7edd3
+        gmake[2]: выход из каталога «/home/oleg/Документы/mipt/snake/Test/build/CMakeFiles/CMakeScratch/TryCompile-jATkNJ»
+        gmake[1]: выход из каталога «/home/oleg/Документы/mipt/snake/Test/build/CMakeFiles/CMakeScratch/TryCompile-jATkNJ»
+        
+      exitCode: 0
+...

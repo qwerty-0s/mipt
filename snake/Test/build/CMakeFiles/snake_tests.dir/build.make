@@ -112,9 +112,10 @@ snake_tests: CMakeFiles/snake_tests.dir/test_snakeBack.cpp.o
 snake_tests: CMakeFiles/snake_tests.dir/snakeBack.cpp.o
 snake_tests: CMakeFiles/snake_tests.dir/build.make
 snake_tests: CMakeFiles/snake_tests.dir/compiler_depend.ts
-snake_tests: /usr/lib/x86_64-linux-gnu/libgtest.a
-snake_tests: /usr/lib/x86_64-linux-gnu/libgtest_main.a
-snake_tests: /usr/lib/x86_64-linux-gnu/libgtest.a
+snake_tests: lib/libgtest.a
+snake_tests: lib/libgtest_main.a
+snake_tests: lib/libgmock.a
+snake_tests: lib/libgtest.a
 snake_tests: CMakeFiles/snake_tests.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/oleg/Документы/mipt/snake/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable snake_tests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/snake_tests.dir/link.txt --verbose=$(VERBOSE)
