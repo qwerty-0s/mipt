@@ -6,13 +6,29 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -Wl,--no-warn-rwx-segments")
 
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/..)
 
 add_executable(snake_tests 
-    test_snakeBack.cpp
-    snakeBack.cpp
+   test_snakeBack.cpp
+    ../snakeBack.cpp    
 )
 
-target_link_libraries(snake_tests fltk)
+## Link FLTK and required X11/system libraries (resolves undefined X* references)
+target_link_libraries(snake_tests
+    PRIVATE
+    fltk
+    X11
+    Xext
+    Xrender
+    Xcursor
+    Xrandr
+    Xinerama
+    Xft
+    fontconfig
+    freetype
+    dl
+    pthread
+)
 
 # Google Test
 include(FetchContent)
@@ -23,6 +39,7 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(googletest)
 
 target_link_libraries(snake_tests
+    PRIVATE
     gtest
     gtest_main
     gmock

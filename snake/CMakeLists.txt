@@ -19,3 +19,5 @@ add_executable(SnakeFLTK ${SOURCES})
 
 target_link_libraries(SnakeFLTK PRIVATE fltk fltk_images)
 target_include_directories(SnakeFLTK PRIVATE ${FLTK_INCLUDE_DIR})
+# Define USE_FLTK for sources that rely on FLTK (so tests can build without FLTK)
+target_compile_definitions(SnakeFLTK PRIVATE USE_FLTK)

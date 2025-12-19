@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/au/C/mipt/mipt/radians/build",
+  "command": "/usr/bin/g++ -g -std=gnu++17 -o CMakeFiles/angle_test.dir/radians.cpp.o -c /home/au/C/mipt/mipt/radians/radians.cpp",
+  "file": "/home/au/C/mipt/mipt/radians/radians.cpp",
+  "output": "CMakeFiles/angle_test.dir/radians.cpp.o"
+},
+{
+  "directory": "/home/au/C/mipt/mipt/radians/build",
+  "command": "/usr/bin/g++ -g -std=gnu++17 -o CMakeFiles/angle_test.dir/main.cpp.o -c /home/au/C/mipt/mipt/radians/main.cpp",
+  "file": "/home/au/C/mipt/mipt/radians/main.cpp",
+  "output": "CMakeFiles/angle_test.dir/main.cpp.o"
+}
+]

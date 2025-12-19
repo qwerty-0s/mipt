@@ -1,5 +1,5 @@
 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o: \
- /home/oleg/Документы/mipt/snake/Test/build/_deps/googletest-src/googletest/src/gtest_main.cc \
+ /home/au/C/mipt/mipt/snake/Test/build/_deps/googletest-src/googletest/src/gtest_main.cc \
  /usr/include/stdc-predef.h /usr/include/c++/14/cstdio \
  /usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/os_defines.h \
@@ -28,7 +28,7 @@ _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o:
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
- /home/oleg/Документы/mipt/snake/Test/build/_deps/googletest-src/googletest/include/gtest/gtest.h \
+ /home/au/C/mipt/mipt/snake/Test/build/_deps/googletest-src/googletest/include/gtest/gtest.h \
  /usr/include/c++/14/cstddef /usr/include/c++/14/bits/version.h \
  /usr/include/c++/14/cstdint \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdint.h /usr/include/stdint.h \
@@ -195,9 +195,9 @@ _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o:
  /usr/include/c++/14/bits/stl_vector.h \
  /usr/include/c++/14/bits/stl_bvector.h \
  /usr/include/c++/14/bits/vector.tcc \
- /home/oleg/Документы/mipt/snake/Test/build/_deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h \
- /home/oleg/Документы/mipt/snake/Test/build/_deps/googletest-src/googletest/include/gtest/gtest-message.h \
- /home/oleg/Документы/mipt/snake/Test/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-port.h \
+ /home/au/C/mipt/mipt/snake/Test/build/_deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h \
+ /home/au/C/mipt/mipt/snake/Test/build/_deps/googletest-src/googletest/include/gtest/gtest-message.h \
+ /home/au/C/mipt/mipt/snake/Test/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-port.h \
  /usr/include/c++/14/stdlib.h /usr/include/string.h \
  /usr/include/strings.h /usr/include/c++/14/iostream \
  /usr/include/x86_64-linux-gnu/sys/stat.h \
@@ -207,8 +207,8 @@ _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o:
  /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
- /home/oleg/Документы/mipt/snake/Test/build/_deps/googletest-src/googletest/include/gtest/internal/custom/gtest-port.h \
- /home/oleg/Документы/mipt/snake/Test/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-port-arch.h \
+ /home/au/C/mipt/mipt/snake/Test/build/_deps/googletest-src/googletest/include/gtest/internal/custom/gtest-port.h \
+ /home/au/C/mipt/mipt/snake/Test/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-port-arch.h \
  /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h \
@@ -223,11 +223,11 @@ _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o:
  /usr/include/c++/14/any /usr/include/c++/14/optional \
  /usr/include/c++/14/bits/enable_special_members.h \
  /usr/include/c++/14/variant \
- /home/oleg/Документы/mipt/snake/Test/build/_deps/googletest-src/googletest/include/gtest/gtest-death-test.h \
- /home/oleg/Документы/mipt/snake/Test/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-death-test-internal.h \
- /home/oleg/Документы/mipt/snake/Test/build/_deps/googletest-src/googletest/include/gtest/gtest-matchers.h \
+ /home/au/C/mipt/mipt/snake/Test/build/_deps/googletest-src/googletest/include/gtest/gtest-death-test.h \
+ /home/au/C/mipt/mipt/snake/Test/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-death-test-internal.h \
+ /home/au/C/mipt/mipt/snake/Test/build/_deps/googletest-src/googletest/include/gtest/gtest-matchers.h \
  /usr/include/c++/14/atomic \
- /home/oleg/Документы/mipt/snake/Test/build/_deps/googletest-src/googletest/include/gtest/gtest-printers.h \
+ /home/au/C/mipt/mipt/snake/Test/build/_deps/googletest-src/googletest/include/gtest/gtest-printers.h \
  /usr/include/c++/14/functional /usr/include/c++/14/bits/std_function.h \
  /usr/include/c++/14/unordered_map \
  /usr/include/c++/14/bits/unordered_map.h \
@@ -235,7 +235,7 @@ _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o:
  /usr/include/c++/14/bits/hashtable_policy.h /usr/include/c++/14/array \
  /usr/include/c++/14/compare /usr/include/c++/14/utility \
  /usr/include/c++/14/bits/stl_relops.h \
- /home/oleg/Документы/mipt/snake/Test/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-internal.h \
+ /home/au/C/mipt/mipt/snake/Test/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-internal.h \
  /usr/include/x86_64-linux-gnu/sys/wait.h /usr/include/signal.h \
  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
  /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
@@ -262,17 +262,17 @@ _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o:
  /usr/lib/gcc/x86_64-linux-gnu/14/include/float.h /usr/include/c++/14/map \
  /usr/include/c++/14/bits/stl_map.h \
  /usr/include/c++/14/bits/stl_multimap.h \
- /home/oleg/Документы/mipt/snake/Test/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-filepath.h \
- /home/oleg/Документы/mipt/snake/Test/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-string.h \
- /home/oleg/Документы/mipt/snake/Test/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h \
+ /home/au/C/mipt/mipt/snake/Test/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-filepath.h \
+ /home/au/C/mipt/mipt/snake/Test/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-string.h \
+ /home/au/C/mipt/mipt/snake/Test/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h \
  /usr/include/c++/14/cxxabi.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/cxxabi_tweaks.h \
- /home/oleg/Документы/mipt/snake/Test/build/_deps/googletest-src/googletest/include/gtest/internal/custom/gtest-printers.h \
- /home/oleg/Документы/mipt/snake/Test/build/_deps/googletest-src/googletest/include/gtest/gtest-param-test.h \
+ /home/au/C/mipt/mipt/snake/Test/build/_deps/googletest-src/googletest/include/gtest/internal/custom/gtest-printers.h \
+ /home/au/C/mipt/mipt/snake/Test/build/_deps/googletest-src/googletest/include/gtest/gtest-param-test.h \
  /usr/include/c++/14/iterator /usr/include/c++/14/bits/stream_iterator.h \
- /home/oleg/Документы/mipt/snake/Test/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-param-util.h \
+ /home/au/C/mipt/mipt/snake/Test/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-param-util.h \
  /usr/include/c++/14/cassert /usr/include/assert.h \
- /home/oleg/Документы/mipt/snake/Test/build/_deps/googletest-src/googletest/include/gtest/gtest-test-part.h \
- /home/oleg/Документы/mipt/snake/Test/build/_deps/googletest-src/googletest/include/gtest/gtest-typed-test.h \
- /home/oleg/Документы/mipt/snake/Test/build/_deps/googletest-src/googletest/include/gtest/gtest_pred_impl.h \
- /home/oleg/Документы/mipt/snake/Test/build/_deps/googletest-src/googletest/include/gtest/gtest_prod.h
+ /home/au/C/mipt/mipt/snake/Test/build/_deps/googletest-src/googletest/include/gtest/gtest-test-part.h \
+ /home/au/C/mipt/mipt/snake/Test/build/_deps/googletest-src/googletest/include/gtest/gtest-typed-test.h \
+ /home/au/C/mipt/mipt/snake/Test/build/_deps/googletest-src/googletest/include/gtest/gtest_pred_impl.h \
+ /home/au/C/mipt/mipt/snake/Test/build/_deps/googletest-src/googletest/include/gtest/gtest_prod.h

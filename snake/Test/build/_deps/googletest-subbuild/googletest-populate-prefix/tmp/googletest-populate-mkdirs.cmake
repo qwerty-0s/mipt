@@ -6,22 +6,22 @@ cmake_minimum_required(VERSION ${CMAKE_VERSION}) # this file comes with cmake
 # If CMAKE_DISABLE_SOURCE_CHANGES is set to true and the source directory is an
 # existing directory in our source tree, calling file(MAKE_DIRECTORY) on it
 # would cause a fatal error, even though it would be a no-op.
-if(NOT EXISTS "/home/oleg/Документы/mipt/snake/Test/build/_deps/googletest-src")
-  file(MAKE_DIRECTORY "/home/oleg/Документы/mipt/snake/Test/build/_deps/googletest-src")
+if(NOT EXISTS "/home/au/C/mipt/mipt/snake/Test/build/_deps/googletest-src")
+  file(MAKE_DIRECTORY "/home/au/C/mipt/mipt/snake/Test/build/_deps/googletest-src")
 endif()
 file(MAKE_DIRECTORY
-  "/home/oleg/Документы/mipt/snake/Test/build/_deps/googletest-build"
-  "/home/oleg/Документы/mipt/snake/Test/build/_deps/googletest-subbuild/googletest-populate-prefix"
-  "/home/oleg/Документы/mipt/snake/Test/build/_deps/googletest-subbuild/googletest-populate-prefix/tmp"
-  "/home/oleg/Документы/mipt/snake/Test/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp"
-  "/home/oleg/Документы/mipt/snake/Test/build/_deps/googletest-subbuild/googletest-populate-prefix/src"
-  "/home/oleg/Документы/mipt/snake/Test/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp"
+  "/home/au/C/mipt/mipt/snake/Test/build/_deps/googletest-build"
+  "/home/au/C/mipt/mipt/snake/Test/build/_deps/googletest-subbuild/googletest-populate-prefix"
+  "/home/au/C/mipt/mipt/snake/Test/build/_deps/googletest-subbuild/googletest-populate-prefix/tmp"
+  "/home/au/C/mipt/mipt/snake/Test/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp"
+  "/home/au/C/mipt/mipt/snake/Test/build/_deps/googletest-subbuild/googletest-populate-prefix/src"
+  "/home/au/C/mipt/mipt/snake/Test/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/home/oleg/Документы/mipt/snake/Test/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/home/au/C/mipt/mipt/snake/Test/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/home/oleg/Документы/mipt/snake/Test/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/home/au/C/mipt/mipt/snake/Test/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp${cfgdir}") # cfgdir has leading slash
 endif()

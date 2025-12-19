@@ -50,6 +50,7 @@ cmake_ninja_workdir = /home/au/C/mipt/mipt/snake/build/
 build cmake_object_order_depends_target_SnakeFLTK: phony || .
 
 build CMakeFiles/SnakeFLTK.dir/main.cpp.o: CXX_COMPILER__SnakeFLTK_unscanned_Debug /home/au/C/mipt/mipt/snake/main.cpp || cmake_object_order_depends_target_SnakeFLTK
+  DEFINES = -DUSE_FLTK
   DEP_FILE = CMakeFiles/SnakeFLTK.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++17
   INCLUDES = -isystem /usr/local/include/FL/images
@@ -57,6 +58,7 @@ build CMakeFiles/SnakeFLTK.dir/main.cpp.o: CXX_COMPILER__SnakeFLTK_unscanned_Deb
   OBJECT_FILE_DIR = CMakeFiles/SnakeFLTK.dir
 
 build CMakeFiles/SnakeFLTK.dir/snakeBack.cpp.o: CXX_COMPILER__SnakeFLTK_unscanned_Debug /home/au/C/mipt/mipt/snake/snakeBack.cpp || cmake_object_order_depends_target_SnakeFLTK
+  DEFINES = -DUSE_FLTK
   DEP_FILE = CMakeFiles/SnakeFLTK.dir/snakeBack.cpp.o.d
   FLAGS = -g -std=gnu++17
   INCLUDES = -isystem /usr/local/include/FL/images
@@ -64,6 +66,7 @@ build CMakeFiles/SnakeFLTK.dir/snakeBack.cpp.o: CXX_COMPILER__SnakeFLTK_unscanne
   OBJECT_FILE_DIR = CMakeFiles/SnakeFLTK.dir
 
 build CMakeFiles/SnakeFLTK.dir/snakeGraph.cpp.o: CXX_COMPILER__SnakeFLTK_unscanned_Debug /home/au/C/mipt/mipt/snake/snakeGraph.cpp || cmake_object_order_depends_target_SnakeFLTK
+  DEFINES = -DUSE_FLTK
   DEP_FILE = CMakeFiles/SnakeFLTK.dir/snakeGraph.cpp.o.d
   FLAGS = -g -std=gnu++17
   INCLUDES = -isystem /usr/local/include/FL/images

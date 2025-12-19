@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "snakeBack.h"
+#include "../snake/snakeBack.h"
 #include <ctime>
 #include <iostream>
 

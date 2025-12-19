@@ -2,37 +2,37 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/oleg/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/mipt/snake/Test/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate"
+			"file" : "/home/au/C/mipt/mipt/snake/Test/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate"
 		},
 		{
-			"file" : "/home/oleg/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/mipt/snake/Test/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate.rule"
+			"file" : "/home/au/C/mipt/mipt/snake/Test/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate.rule"
 		},
 		{
-			"file" : "/home/oleg/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/mipt/snake/Test/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate-complete.rule"
+			"file" : "/home/au/C/mipt/mipt/snake/Test/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate-complete.rule"
 		},
 		{
-			"file" : "/home/oleg/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/mipt/snake/Test/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build.rule"
+			"file" : "/home/au/C/mipt/mipt/snake/Test/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build.rule"
 		},
 		{
-			"file" : "/home/oleg/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/mipt/snake/Test/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure.rule"
+			"file" : "/home/au/C/mipt/mipt/snake/Test/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure.rule"
 		},
 		{
-			"file" : "/home/oleg/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/mipt/snake/Test/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download.rule"
+			"file" : "/home/au/C/mipt/mipt/snake/Test/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download.rule"
 		},
 		{
-			"file" : "/home/oleg/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/mipt/snake/Test/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install.rule"
+			"file" : "/home/au/C/mipt/mipt/snake/Test/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install.rule"
 		},
 		{
-			"file" : "/home/oleg/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/mipt/snake/Test/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir.rule"
+			"file" : "/home/au/C/mipt/mipt/snake/Test/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir.rule"
 		},
 		{
-			"file" : "/home/oleg/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/mipt/snake/Test/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch.rule"
+			"file" : "/home/au/C/mipt/mipt/snake/Test/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch.rule"
 		},
 		{
-			"file" : "/home/oleg/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/mipt/snake/Test/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test.rule"
+			"file" : "/home/au/C/mipt/mipt/snake/Test/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test.rule"
 		},
 		{
-			"file" : "/home/oleg/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/mipt/snake/Test/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update.rule"
+			"file" : "/home/au/C/mipt/mipt/snake/Test/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update.rule"
 		}
 	],
 	"target" : 

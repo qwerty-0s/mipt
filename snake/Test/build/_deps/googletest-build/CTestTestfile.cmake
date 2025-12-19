@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/oleg/Документы/mipt/snake/Test/build/_deps/googletest-src
-# Build directory: /home/oleg/Документы/mipt/snake/Test/build/_deps/googletest-build
+# Source directory: /home/au/C/mipt/mipt/snake/Test/build/_deps/googletest-src
+# Build directory: /home/au/C/mipt/mipt/snake/Test/build/_deps/googletest-build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

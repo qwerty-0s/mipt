@@ -1,107 +1,117 @@
-#include <ctime>
 #include "snakeBack.h"
 #include <FL/Fl.H>
-#include <FL/fl_draw.H> 
+#include <FL/fl_draw.H>
+#include <ctime>
+#include <cstdlib>
 
-snake::snake(int x, int y)
-{
-    int  i = 0; 
+namespace {
+    Fl_Color get_random_color() {
+        static Fl_Color colors[] = {
+            fl_rgb_color(255, 105, 97),
+            fl_rgb_color(97, 255, 130),
+            fl_rgb_color(97, 186, 255),
+            fl_rgb_color(255, 255, 97),
+            fl_rgb_color(255, 97, 255),
+            fl_rgb_color(97, 255, 255),
+            fl_rgb_color(255, 170, 97),
+            fl_rgb_color(200, 97, 255),
+            fl_rgb_color(97, 255, 200),
+            fl_rgb_color(255, 220, 97)
+        };
+        return colors[rand() % 10];
+    }
+}
+
+snake::snake(int x, int y) {
+    int i = 0;
     snake_body_x[0] = x;
     snake_body_y[0] = y;
     max_length = 10;
-    for (i=1; i<max_length; i++)
-    {
-        snake_body_x[i] = x-i; 
+    for (i = 1; i < max_length; i++) {
+        snake_body_x[i] = x - i;
         snake_body_y[i] = y;
     }
 }
 
-void snake::move()
-{
-    int i = max_length; 
-    for (i = max_length-1; i>0; i--)
-    {
-        snake_body_x[i] = snake_body_x[i-1];
-        snake_body_y[i] = snake_body_y[i-1];
+void snake::move() {
+    // allow direction to be changed again on next tick
+    direction_locked = false;
+    int i = max_length;
+    for (i = max_length - 1; i > 0; i--) {
+        snake_body_x[i] = snake_body_x[i - 1];
+        snake_body_y[i] = snake_body_y[i - 1];
     }
 
-    switch (dir)
-    {
-        case UP   : snake_body_y[0] --; break;
-        case DOWN : snake_body_y[0] ++; break;
-        case LEFT : snake_body_x[0] --; break;
-        case RIGHT: snake_body_x[0] ++; break; 
+    switch (dir) {
+    case UP:
+        snake_body_y[0]--;
+        break;
+    case DOWN:
+        snake_body_y[0]++;
+        break;
+    case LEFT:
+        snake_body_x[0]--;
+        break;
+    case RIGHT:
+        snake_body_x[0]++;
+        break;
     }
-
 }
 
-bool snake::check_collision(int max_width, int max_height)
-{
-    for (int i = 1; i < max_length; i++)
-    {
-        if (snake_body_x[0] == snake_body_x[i] && snake_body_y[0] == snake_body_y[i])
-        {
-            return 1;     
+bool snake::check_collision(int max_width, int max_height) {
+    for (int i = 1; i < max_length; i++) {
+        if (snake_body_x[0] == snake_body_x[i] &&
+            snake_body_y[0] == snake_body_y[i]) {
+            return 1;
         }
     }
 
-    if (snake_body_x[0] >= max_width || snake_body_y[0] >= max_height || snake_body_x[0] < 0 || snake_body_y[0] < 0)
-        {
-            return 1; 
-        }
-
-    return 0; 
-}
-
-int snake::len()
-{
-    return max_length;
-}
-
-int snake::get_snake_coordinates_x(int n)
-{
-    return snake_body_x[n];
-}
-
-int snake::get_snake_coordinates_y(int n)
-{
-    return snake_body_y[n];
-}
-
-void snake::set_direction(direction d)
-{   
-    if (dir == UP && d==DOWN || dir == DOWN && d==UP || dir == LEFT && d ==  RIGHT || dir == RIGHT && d == LEFT){
-    }
-    else{ 
-        dir = d;
-    }
-}
-
-bool snake::grow(food* meal)
-{
-    if(meal && snake_body_x[0] == meal->getX() && snake_body_y[0] == meal->getY())
-    {
-        max_length+=1;
+    if (snake_body_x[0] >= max_width || snake_body_y[0] >= max_height ||
+        snake_body_x[0] < 0 || snake_body_y[0] < 0) {
         return 1;
     }
-    else
-    {
+
+    return 0;
+}
+
+int snake::len() { return max_length; }
+
+int snake::get_snake_coordinates_x(int n) { return snake_body_x[n]; }
+
+int snake::get_snake_coordinates_y(int n) { return snake_body_y[n]; }
+
+void snake::set_direction(direction d) {
+    // If a direction change was already accepted this tick, ignore further changes
+    if (direction_locked) return;
+
+    // Prevent reversing direction (180 degrees)
+    if (dir == UP && d == DOWN || dir == DOWN && d == UP ||
+        dir == LEFT && d == RIGHT || dir == RIGHT && d == LEFT) {
+        return;
+    }
+
+    dir = d;
+    direction_locked = true;
+}
+
+bool snake::grow(food *meal) {
+    if (meal && snake_body_x[0] == meal->getX() &&
+        snake_body_y[0] == meal->getY()) {
+        max_length += 1;
+        return 1;
+    } else {
         return 0;
     }
 }
 
-SnakeBackground::SnakeBackground(int w, int h, int cell) 
-    : width(w), height(h), cellSize(cell)
-{
-}
+SnakeBackground::SnakeBackground(int w, int h, int cell)
+    : width(w), height(h), cellSize(cell) {}
 
 void SnakeBackground::draw() {
-    
-    fl_color(0x100a3a);  
+    fl_color(0x100a3a);
     fl_rectf(0, 0, width, height);
-    
-    
-    fl_color(0x3a4a7a);  
+
+    fl_color(0x3a4a7a);
     for (int x = 0; x <= width; x += cellSize) {
         fl_line(x, 0, x, height);
     }
@@ -110,19 +120,36 @@ void SnakeBackground::draw() {
     }
 }
 
-void food::respawn(int max_width, int max_height)
-    {
-        x = rand() % max_width;
-        y = rand() % max_height;
+food::food(int max_width, int max_height) {
+    srand(time(0));
+    color = FL_RED;
+    color_timer = 0;
+    respawn(max_width, max_height);
+}
+
+void food::respawn(int max_width, int max_height) {
+    x = rand() % max_width;
+    y = rand() % max_height;
+    color = get_random_color();
+}
+
+void food::update_color() {
+    color_timer++;
+    
+    if (color_timer >= 10) {
+        color = get_random_color();  
+        color_timer = 0;
     }
+}
 
+int food::getX() { 
+    return x; 
+}
 
+int food::getY() { 
+    return y; 
+}
 
-food::food(int max_width, int max_height)
-    {
-        srand(time(0));
-        respawn(max_width, max_height);
-    }
-
-    int food::getX() { return x; }
-    int food::getY() { return y; }
+Fl_Color food::getColor() { 
+    return color; 
+}

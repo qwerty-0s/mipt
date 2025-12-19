@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/oleg/Документы/mipt/snake/Test
+CMAKE_SOURCE_DIR = /home/au/C/mipt/mipt/snake/Test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/oleg/Документы/mipt/snake/Test/build
+CMAKE_BINARY_DIR = /home/au/C/mipt/mipt/snake/Test/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/snake_tests.dir/depend.make
@@ -73,43 +73,43 @@ CMakeFiles/snake_tests.dir/codegen:
 .PHONY : CMakeFiles/snake_tests.dir/codegen
 
 CMakeFiles/snake_tests.dir/test_snakeBack.cpp.o: CMakeFiles/snake_tests.dir/flags.make
-CMakeFiles/snake_tests.dir/test_snakeBack.cpp.o: /home/oleg/Документы/mipt/snake/Test/test_snakeBack.cpp
+CMakeFiles/snake_tests.dir/test_snakeBack.cpp.o: /home/au/C/mipt/mipt/snake/Test/test_snakeBack.cpp
 CMakeFiles/snake_tests.dir/test_snakeBack.cpp.o: CMakeFiles/snake_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/oleg/Документы/mipt/snake/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/snake_tests.dir/test_snakeBack.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/snake_tests.dir/test_snakeBack.cpp.o -MF CMakeFiles/snake_tests.dir/test_snakeBack.cpp.o.d -o CMakeFiles/snake_tests.dir/test_snakeBack.cpp.o -c /home/oleg/Документы/mipt/snake/Test/test_snakeBack.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/au/C/mipt/mipt/snake/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/snake_tests.dir/test_snakeBack.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/snake_tests.dir/test_snakeBack.cpp.o -MF CMakeFiles/snake_tests.dir/test_snakeBack.cpp.o.d -o CMakeFiles/snake_tests.dir/test_snakeBack.cpp.o -c /home/au/C/mipt/mipt/snake/Test/test_snakeBack.cpp
 
 CMakeFiles/snake_tests.dir/test_snakeBack.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/snake_tests.dir/test_snakeBack.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oleg/Документы/mipt/snake/Test/test_snakeBack.cpp > CMakeFiles/snake_tests.dir/test_snakeBack.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/au/C/mipt/mipt/snake/Test/test_snakeBack.cpp > CMakeFiles/snake_tests.dir/test_snakeBack.cpp.i
 
 CMakeFiles/snake_tests.dir/test_snakeBack.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/snake_tests.dir/test_snakeBack.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oleg/Документы/mipt/snake/Test/test_snakeBack.cpp -o CMakeFiles/snake_tests.dir/test_snakeBack.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/au/C/mipt/mipt/snake/Test/test_snakeBack.cpp -o CMakeFiles/snake_tests.dir/test_snakeBack.cpp.s
 
-CMakeFiles/snake_tests.dir/snakeBack.cpp.o: CMakeFiles/snake_tests.dir/flags.make
-CMakeFiles/snake_tests.dir/snakeBack.cpp.o: /home/oleg/Документы/mipt/snake/Test/snakeBack.cpp
-CMakeFiles/snake_tests.dir/snakeBack.cpp.o: CMakeFiles/snake_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/oleg/Документы/mipt/snake/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/snake_tests.dir/snakeBack.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/snake_tests.dir/snakeBack.cpp.o -MF CMakeFiles/snake_tests.dir/snakeBack.cpp.o.d -o CMakeFiles/snake_tests.dir/snakeBack.cpp.o -c /home/oleg/Документы/mipt/snake/Test/snakeBack.cpp
+CMakeFiles/snake_tests.dir/home/au/C/mipt/mipt/snake/snakeBack.cpp.o: CMakeFiles/snake_tests.dir/flags.make
+CMakeFiles/snake_tests.dir/home/au/C/mipt/mipt/snake/snakeBack.cpp.o: /home/au/C/mipt/mipt/snake/snakeBack.cpp
+CMakeFiles/snake_tests.dir/home/au/C/mipt/mipt/snake/snakeBack.cpp.o: CMakeFiles/snake_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/au/C/mipt/mipt/snake/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/snake_tests.dir/home/au/C/mipt/mipt/snake/snakeBack.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/snake_tests.dir/home/au/C/mipt/mipt/snake/snakeBack.cpp.o -MF CMakeFiles/snake_tests.dir/home/au/C/mipt/mipt/snake/snakeBack.cpp.o.d -o CMakeFiles/snake_tests.dir/home/au/C/mipt/mipt/snake/snakeBack.cpp.o -c /home/au/C/mipt/mipt/snake/snakeBack.cpp
 
-CMakeFiles/snake_tests.dir/snakeBack.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/snake_tests.dir/snakeBack.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oleg/Документы/mipt/snake/Test/snakeBack.cpp > CMakeFiles/snake_tests.dir/snakeBack.cpp.i
+CMakeFiles/snake_tests.dir/home/au/C/mipt/mipt/snake/snakeBack.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/snake_tests.dir/home/au/C/mipt/mipt/snake/snakeBack.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/au/C/mipt/mipt/snake/snakeBack.cpp > CMakeFiles/snake_tests.dir/home/au/C/mipt/mipt/snake/snakeBack.cpp.i
 
-CMakeFiles/snake_tests.dir/snakeBack.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/snake_tests.dir/snakeBack.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oleg/Документы/mipt/snake/Test/snakeBack.cpp -o CMakeFiles/snake_tests.dir/snakeBack.cpp.s
+CMakeFiles/snake_tests.dir/home/au/C/mipt/mipt/snake/snakeBack.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/snake_tests.dir/home/au/C/mipt/mipt/snake/snakeBack.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/au/C/mipt/mipt/snake/snakeBack.cpp -o CMakeFiles/snake_tests.dir/home/au/C/mipt/mipt/snake/snakeBack.cpp.s
 
 # Object files for target snake_tests
 snake_tests_OBJECTS = \
 "CMakeFiles/snake_tests.dir/test_snakeBack.cpp.o" \
-"CMakeFiles/snake_tests.dir/snakeBack.cpp.o"
+"CMakeFiles/snake_tests.dir/home/au/C/mipt/mipt/snake/snakeBack.cpp.o"
 
 # External object files for target snake_tests
 snake_tests_EXTERNAL_OBJECTS =
 
 snake_tests: CMakeFiles/snake_tests.dir/test_snakeBack.cpp.o
-snake_tests: CMakeFiles/snake_tests.dir/snakeBack.cpp.o
+snake_tests: CMakeFiles/snake_tests.dir/home/au/C/mipt/mipt/snake/snakeBack.cpp.o
 snake_tests: CMakeFiles/snake_tests.dir/build.make
 snake_tests: CMakeFiles/snake_tests.dir/compiler_depend.ts
 snake_tests: lib/libgtest.a
@@ -117,7 +117,7 @@ snake_tests: lib/libgtest_main.a
 snake_tests: lib/libgmock.a
 snake_tests: lib/libgtest.a
 snake_tests: CMakeFiles/snake_tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/oleg/Документы/mipt/snake/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable snake_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/au/C/mipt/mipt/snake/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable snake_tests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/snake_tests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -129,6 +129,6 @@ CMakeFiles/snake_tests.dir/clean:
 .PHONY : CMakeFiles/snake_tests.dir/clean
 
 CMakeFiles/snake_tests.dir/depend:
-	cd /home/oleg/Документы/mipt/snake/Test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/oleg/Документы/mipt/snake/Test /home/oleg/Документы/mipt/snake/Test /home/oleg/Документы/mipt/snake/Test/build /home/oleg/Документы/mipt/snake/Test/build /home/oleg/Документы/mipt/snake/Test/build/CMakeFiles/snake_tests.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/au/C/mipt/mipt/snake/Test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/au/C/mipt/mipt/snake/Test /home/au/C/mipt/mipt/snake/Test /home/au/C/mipt/mipt/snake/Test/build /home/au/C/mipt/mipt/snake/Test/build /home/au/C/mipt/mipt/snake/Test/build/CMakeFiles/snake_tests.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/snake_tests.dir/depend
 

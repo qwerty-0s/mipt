@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/oleg/Документы/mipt/snake/Test
+CMAKE_SOURCE_DIR = /home/au/C/mipt/mipt/snake/Test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/oleg/Документы/mipt/snake/Test/build
+CMAKE_BINARY_DIR = /home/au/C/mipt/mipt/snake/Test/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/oleg/Документы/mipt/snake/Test/build/CMakeFiles /home/oleg/Документы/mipt/snake/Test/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/au/C/mipt/mipt/snake/Test/build/CMakeFiles /home/au/C/mipt/mipt/snake/Test/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/oleg/Документы/mipt/snake/Test/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/au/C/mipt/mipt/snake/Test/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -236,29 +236,29 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
-snakeBack.o: snakeBack.cpp.o
-.PHONY : snakeBack.o
+home/au/C/mipt/mipt/snake/snakeBack.o: home/au/C/mipt/mipt/snake/snakeBack.cpp.o
+.PHONY : home/au/C/mipt/mipt/snake/snakeBack.o
 
 # target to build an object file
-snakeBack.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_tests.dir/build.make CMakeFiles/snake_tests.dir/snakeBack.cpp.o
-.PHONY : snakeBack.cpp.o
+home/au/C/mipt/mipt/snake/snakeBack.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_tests.dir/build.make CMakeFiles/snake_tests.dir/home/au/C/mipt/mipt/snake/snakeBack.cpp.o
+.PHONY : home/au/C/mipt/mipt/snake/snakeBack.cpp.o
 
-snakeBack.i: snakeBack.cpp.i
-.PHONY : snakeBack.i
+home/au/C/mipt/mipt/snake/snakeBack.i: home/au/C/mipt/mipt/snake/snakeBack.cpp.i
+.PHONY : home/au/C/mipt/mipt/snake/snakeBack.i
 
 # target to preprocess a source file
-snakeBack.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_tests.dir/build.make CMakeFiles/snake_tests.dir/snakeBack.cpp.i
-.PHONY : snakeBack.cpp.i
+home/au/C/mipt/mipt/snake/snakeBack.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_tests.dir/build.make CMakeFiles/snake_tests.dir/home/au/C/mipt/mipt/snake/snakeBack.cpp.i
+.PHONY : home/au/C/mipt/mipt/snake/snakeBack.cpp.i
 
-snakeBack.s: snakeBack.cpp.s
-.PHONY : snakeBack.s
+home/au/C/mipt/mipt/snake/snakeBack.s: home/au/C/mipt/mipt/snake/snakeBack.cpp.s
+.PHONY : home/au/C/mipt/mipt/snake/snakeBack.s
 
 # target to generate assembly for a file
-snakeBack.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_tests.dir/build.make CMakeFiles/snake_tests.dir/snakeBack.cpp.s
-.PHONY : snakeBack.cpp.s
+home/au/C/mipt/mipt/snake/snakeBack.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_tests.dir/build.make CMakeFiles/snake_tests.dir/home/au/C/mipt/mipt/snake/snakeBack.cpp.s
+.PHONY : home/au/C/mipt/mipt/snake/snakeBack.cpp.s
 
 test_snakeBack.o: test_snakeBack.cpp.o
 .PHONY : test_snakeBack.o
@@ -302,9 +302,9 @@ help:
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... snake_tests"
-	@echo "... snakeBack.o"
-	@echo "... snakeBack.i"
-	@echo "... snakeBack.s"
+	@echo "... home/au/C/mipt/mipt/snake/snakeBack.o"
+	@echo "... home/au/C/mipt/mipt/snake/snakeBack.i"
+	@echo "... home/au/C/mipt/mipt/snake/snakeBack.s"
 	@echo "... test_snakeBack.o"
 	@echo "... test_snakeBack.i"
 	@echo "... test_snakeBack.s"
