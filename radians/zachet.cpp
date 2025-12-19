@@ -1,5 +1,36 @@
 #include<iostream>
 #include<vector>
+#include <fstream>
+
+template <typename T>
+T max (T a, T b)
+{
+    if (a>=b)
+    {
+        return a;
+    }
+    else 
+    {
+        return b;
+    }
+}
+
+class Animal {
+public:
+    virtual void make_sound()
+    {
+        std::cout<<"animal makes sound"<<std::endl;
+    }
+
+};
+
+class Dog : public Animal{
+public:
+    void make_sound() override
+    {
+        std::cout<<"dog barks"<<std::endl;
+    }
+};
 
 constexpr int Factorial(int n) {
     return (n <= 1) ? 1 : (n * Factorial(n - 1));
@@ -22,6 +53,11 @@ int increase (int& a)
 
 int main()
 {   
+
+    std::cout << max(3,7) <<std::endl;
+    Dog bob;
+    bob.make_sound();
+
     constexpr int n = 10;
     std::cout << "Factorial of " << n << " is " << Factorial(n) << std::endl;
 
@@ -73,4 +109,19 @@ int main()
     *p = 5;
     std::cout<<*p<<std::endl;
     delete p;
+
+    enum class Color { RED, GREEN, BLUE };
+    Color color = Color::RED;
+
+    std::ofstream outfile("example.txt");
+
+    if (!outfile) {
+        std::cerr << "Ошибка открытия файла!" << std::endl;
+        return 1;
+    }
+
+    outfile << "This is a test file." << std::endl;
+    outfile.close();
+
+
 }
